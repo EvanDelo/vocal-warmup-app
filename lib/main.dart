@@ -331,7 +331,7 @@ class _WarmupHomeScreenState extends State<WarmupHomeScreen> {
                         items: ExercisePattern.presets.map((pattern) {
                           return DropdownMenuItem<String>(
                             value: pattern.id,
-                            child: Text('${pattern.name}  (${pattern.description})'),
+                            child: Text(pattern.name),
                           );
                         }).toList(),
                         onChanged: (id) {
